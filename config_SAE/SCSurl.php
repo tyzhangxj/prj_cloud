@@ -15,7 +15,7 @@
                  $ct."\n" .
 		 $tm . "\n".
 		 "/testali/".$user_path;
-$mySecretKey = "b8ffea14046b50d7b731042c30a57cfeb63a0b64";
+$mySecretKey = "";
 
 $ssig = substr( base64_encode( hash_hmac( "sha1", $StringToSign, $mySecretKey, true ) ), 5, 10); ;
  
